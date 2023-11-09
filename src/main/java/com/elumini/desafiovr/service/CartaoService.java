@@ -54,7 +54,7 @@ public class CartaoService {
 				});
 	}
 	
-	public List<CartaoResponseDTO> listarCartoes(){
+	public List<CartaoResponseDTO> obterCartoes(){
 		return cartaoRepository.findAll().stream().map(cartao ->{
 			return new CartaoResponseDTO(cartao);
 		}).collect(Collectors.toList());

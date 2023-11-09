@@ -39,8 +39,8 @@ public class CartaoResource {
 	} 
 	
 	@GetMapping
-	public List<CartaoResponseDTO> listarCartoes(){
-		return cartaoService.listarCartoes();
+	public List<CartaoResponseDTO> obterCartoes(){
+		return cartaoService.obterCartoes();
 	}
 	
 	@GetMapping(path="/{numeroCartao}")
